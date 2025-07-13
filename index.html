@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#profile" class="active" onclick="goTo('m-link')" id="m-link"
+            >Profile</a
+          >
+        </li>
+        <li>
+          <a href="#about" class="" onclick="goTo('a-link')" id="a-link"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="#stack" class="" onclick="goTo('s-link')" id="s-link"
+            >Stack</a
+          >
+        </li>
+        <li>
+          <a href="#certification" class="" onclick="goTo('c-link')" id="c-link"
+            >Certification</a
+          >
+        </li>
+        <li>
+          <a href="#projects" class="" onclick="goTo('p-link')" id="p-link"
+            >Projects</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Profile -->
+    <section id="profile">
+      <div class="profile-image">
+        <img src="/assets/profile/formal.JPG" alt="" id="formal" />
+        <img src="/assets/profile/creative.JPG" alt="" id="creative" />
+      </div>
+      <div class="profile-details">
+        <div class="name">
+          <h1>Hi. I am <strong>Renzo Viñas</strong></h1>
+          <p id="age">22 years old</p>
+          <div class="address">
+            <span><img src="assets/others/ph.png" alt="" /></span>
+            <p>Cavite, Philippines</p>
+          </div>
+        </div>
+        <div class="contact">
+          <a href="assets/files/resume.pdf" download>
+            <div class="resume" id="resume">
+              <span><i class="fa-solid fa-download"></i></span>
+              <p>Download Resume</p>
+            </div>
+          </a>
+          <a
+            href="www.linkedin.com/in/renzo-viñas"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="linkedIn">
+              <span><i class="fa-brands fa-linkedin"></i></span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/Reganexus"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="github">
+              <span><i class="fa-brands fa-github"></i></span>
+            </div>
+          </a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=renzovinas7262@gmail.com&su=Subject&body=Message
+"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="email">
+              <span><i class="fa-solid fa-at"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="expertise">
+          <p>Full Stack Developer</p>
+          <div class="tech-stack">
+            <span><img src="/assets/stack/react.png" alt="" /></span>
+            <span><img src="/assets/stack/js.png" alt="" /></span>
+            <span><img src="/assets/stack/flutter.png" alt="" /></span>
+            <span><img src="/assets/stack/python.png" alt="" /></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="tab">
+        <button
+          class="tab-button active"
+          onclick="changeAbout('experience')"
+          id="button-experience"
+        >
+          Work Experience
+        </button>
+        <button
+          class="tab-button"
+          onclick="changeAbout('education')"
+          id="button-education"
+        >
+          Education
+        </button>
+        <button
+          class="tab-button"
+          onclick="changeAbout('affiliate')"
+          id="button-affiliate"
+        >
+          Affiliations
+        </button>
+      </div>
+      <div class="about-contents">
+        <div id="experience" class="active">
+          <div id="experience-1">
+            <div class="profile">
+              <img src="assets/experience/startuplab.jpg" alt="" />
+              <div class="details">
+                <div class="company">
+                  <h2>StartUp Lab</h2>
+                  <p>Assistant Project Manager and Frontend Developer</p>
+                </div>
+                <div class="year">
+                  <p>September 2024</p>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <p>
+                Contracted with the PAGCOR Philippines and developed a Job
+                Placement website using PHP, Web Development, and MySQL.
+              </p>
+            </div>
+          </div>
+
+          <div id="experience-2">
+            <div class="profile">
+              <img src="assets/experience/leentech.png" alt="" />
+              <div class="details">
+                <div class="company">
+                  <h2>LEENTech Network Solutions</h2>
+                  <p>Intern Project Manager and Frontend Developer</p>
+                </div>
+                <div class="year">
+                  <p>June 2024–August 2024</p>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <p>
+                Developed a SaaS AI-powered chatbot using Next.js and React.
+                Acquired skills in Project Planning, Scrum Methodology, and
+                presentation to international clients.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="education">
+          <div id="education-1">
+            <div class="profile">
+              <img src="assets/education/lpu.png" alt="" />
+              <div class="details">
+                <div class="company">
+                  <h2>Lyceum of the Philippines Cavite</h2>
+                  <p>Bachelor of Science in Computer Science</p>
+                </div>
+                <div class="year">
+                  <p>2021-2025</p>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <ul>
+                <li>Graduated as Cum Laude</li>
+                <li>Consistent Dean's Lister</li>
+                <li>LPU Residential Partial Scholarship Grantee</li>
+                <li>CHED UniFAST Grantee</li>
+                <li>Consistent Class President</li>
+              </ul>
+            </div>
+          </div>
+          <div id="education-2">
+            <div class="profile">
+              <img src="assets/education/ama.png" alt="" />
+              <div class="details">
+                <div class="company">
+                  <h2>AMA University Campus Cavite</h2>
+                  <p>Science, Technology, Engineering, and Mathematics</p>
+                </div>
+                <div class="year">
+                  <p>2019-2021</p>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <ul>
+                <li>Graduated with Highest Honors</li>
+                <li>Consistent Class President</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="affiliate">
+          <div id="affiliate-1">
+            <div class="profile">
+              <img src="assets/affiliate/sata.png" alt="" />
+              <div class="details">
+                <div class="company">
+                  <h2>
+                    Student Association for Technological Advancemnt (SATA)
+                  </h2>
+                  <p>Organization President</p>
+                </div>
+                <div class="year">
+                  <p>2023-2024</p>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <ul>
+                <li>Organized and handled multiple campus events</li>
+                <li>Led over 100+ members, officers, and committees</li>
+              </ul>
+            </div>
+          </div>
+          <div id="affiliate-2">
+            <div class="profile">
+              <img src="assets/affiliate/isite.png" alt="" />
+              <div class="details">
+                <div class="company">
+                  <h2>
+                    Integrated Society of Information Technology Enthusiasts
+                    (iSITE)
+                  </h2>
+                  <p>Member</p>
+                </div>
+                <div class="year">
+                  <p>2022-2025</p>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <ul>
+                <li>iSITE Best Student Award</li>
+                <li>Finalist at iSITE Java Programming Competition</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack">
+      <div class="stack-content">
+        <button id="web" class="active" onclick="changeStack('web')">
+          Web Development
+        </button>
+        <button id="mobile" class="" onclick="changeStack('mobile')">
+          Mobile Development
+        </button>
+        <button id="ai" class="" onclick="changeStack('ai')">
+          AI and Machine Learning
+        </button>
+        <button id="ui" class="" onclick="changeStack('ui')">UI/UX</button>
+        <button id="db" class="" onclick="changeStack('db')">Database</button>
+        <button id="sd" class="" onclick="changeStack('sd')">
+          Software Development
+        </button>
+      </div>
+      <div class="stack-container" id="physics-container">
+        <div class="active" id="web-content">
+          <div class="html ball">
+            <img src="assets/stack/html.png" alt="" />
+          </div>
+          <div class="css ball"><img src="assets/stack/css.png" alt="" /></div>
+          <div class="javascript ball">
+            <img src="assets/stack/js.png" alt="" />
+          </div>
+          <div class="react ball">
+            <img src="assets/stack/react.png" alt="" />
+          </div>
+          <div class="nextjs ball">
+            <img src="assets/stack/nextjs.png" alt="" />
+          </div>
+          <div class="vuejs ball">
+            <img src="assets/stack/vue.png" alt="" />
+          </div>
+          <div class="bootstrap ball">
+            <img src="assets/stack/bootstrap.png" alt="" />
+          </div>
+          <div class="typescript ball">
+            <img src="assets/stack/typescript.png" alt="" />
+          </div>
+          <div class="tailwind ball">
+            <img src="assets/stack/tailwind.png" alt="" />
+          </div>
+          <div class="php ball"><img src="assets/stack/php.png" alt="" /></div>
+          <div class="python ball">
+            <img src="assets/stack/python.png" alt="" />
+          </div>
+          <div class="vercel ball">
+            <img src="assets/stack/vercel.png" alt="" />
+          </div>
+          <div class="cloud ball">
+            <img src="assets/stack/cloud.png" alt="" />
+          </div>
+          <div class="nodejs ball">
+            <img src="assets/stack/nodejs.png" alt="" />
+          </div>
+        </div>
+        <div class="" id="mobile-content">
+          <div class="flutter ball">
+            <img src="assets/stack/flutter.png" alt="" />
+          </div>
+          <div class="dart ball">
+            <img src="assets/stack/dart.png" alt="" />
+          </div>
+          <div class="kotlin ball">
+            <img src="assets/stack/kotlin.png" alt="" />
+          </div>
+          <div class="android ball">
+            <img src="assets/stack/android.png" alt="" />
+          </div>
+          <div class="gplay ball">
+            <img src="assets/stack/gplay.png" alt="" />
+          </div>
+        </div>
+        <div class="" id="db-content">
+          <div class="firebase ball">
+            <img src="assets/stack/firebase.png" alt="" />
+          </div>
+          <div class="mysql ball">
+            <img src="assets/stack/mysql.png" alt="" />
+          </div>
+          <div class="supabase ball">
+            <img src="assets/stack/supabase.png" alt="" />
+          </div>
+          <div class="mongodb ball">
+            <img src="assets/stack/mongodb.png" alt="" />
+          </div>
+          <div class="postgres ball">
+            <img src="assets/stack/postgres.png" alt="" />
+          </div>
+        </div>
+        <div class="" id="ai-content">
+          <div class="fastapi ball">
+            <img src="assets/stack/fastapi.png" alt="" />
+          </div>
+          <div class="tensorflow ball">
+            <img src="assets/stack/tensorflow.png" alt="" />
+          </div>
+          <div class="pytorch ball">
+            <img src="assets/stack/pytorch.png" alt="" />
+          </div>
+          <div class="keras ball">
+            <img src="assets/stack/keras.png" alt="" />
+          </div>
+          <div class="seaborn ball">
+            <img src="assets/stack/seaborn.png" alt="" />
+          </div>
+          <div class="matplotlib ball">
+            <img src="assets/stack/matplotlib.png" alt="" />
+          </div>
+          <div class="scikit ball">
+            <img src="assets/stack/sckit.png" alt="" />
+          </div>
+        </div>
+        <div class="" id="ui-content">
+          <div class="figma ball">
+            <img src="assets/stack/figma.png" alt="" />
+          </div>
+          <div class="photoshop ball">
+            <img src="assets/stack/photoshop.png" alt="" />
+          </div>
+          <div class="illustrator ball">
+            <img src="assets/stack/illustrator.png" alt="" />
+          </div>
+        </div>
+        <div class="" id="sd-content">
+          <div class="trello ball">
+            <img src="assets/stack/trello.png" alt="" />
+          </div>
+          <div class="github ball">
+            <img src="assets/stack/github.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certification -->
+    <section id="certification">
+      <div class="display-content">
+        <div class="certificate-view">
+          <img
+            id="main-cert-image"
+            src="assets/certificate/htmlcss.webp"
+            alt=""
+            loading="lazy"
+          />
+        </div>
+
+        <div class="certificate-content">
+          <div class="controls">
+            <div class="back-button" onclick="backCert()">
+              <p><i class="fa-solid fa-chevron-left"></i></p>
+            </div>
+            <div class="next-button" onclick="nextCert()">
+              <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+          </div>
+          <div id="htmlcss-content" class="active">
+            <h3>IT Specialist in HTML/CSS</h3>
+            <p>Certiport - Pearson</p>
+            <p>June 2024</p>
+          </div>
+          <div id="database-content">
+            <h3>IT Specialist in Databases</h3>
+            <p>Certiport - Pearson</p>
+            <p>June 2024</p>
+          </div>
+          <div id="networking-content">
+            <h3>Networking Basics</h3>
+            <p>Cisco Systems</p>
+            <p>June 2024</p>
+          </div>
+          <div id="os-content">
+            <h3>Operating System Basics</h3>
+            <p>Cisco Systems</p>
+            <p>June 2024</p>
+          </div>
+          <div id="sap-content">
+            <h3>SAP Business One</h3>
+            <p>Systems, Applications, and Products in Data Processing (SAP)</p>
+            <p>March 2023</p>
+          </div>
+        </div>
+      </div>
+      <div class="collection">
+        <div class="active" id="htmlcss" onclick="changeCert('htmlcss')">
+          <img src="assets/certificate/htmlcss.webp" alt="" loading="lazy" />
+        </div>
+        <div id="database" onclick="changeCert('database')">
+          <img src="assets/certificate/database.webp" alt="" loading="lazy" />
+        </div>
+        <div id="sap" onclick="changeCert('sap')">
+          <img src="assets/certificate/sap.webp" alt="" loading="lazy" />
+        </div>
+        <div id="networking" onclick="changeCert('networking')">
+          <img src="assets/certificate/networking.webp" alt="" loading="lazy" />
+        </div>
+        <div id="os" onclick="changeCert('os')">
+          <img src="assets/certificate/os.webp" alt="" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div onclick="expandProject('solace')">
+        <div class="project-item">
+          <img src="assets/project/solace.png" alt="" />
+          <div class="project-name">
+            <h2>SOLACE</h2>
+            <p>Smart Symptom Monitoring App for Palliative and Hospice Care</p>
+          </div>
+          <div class="project-date">
+            <p>June 2025</p>
+          </div>
+        </div>
+        <div class="project-details expand" id="solace">
+          <div class="project-context">
+            <p>
+              <strong>SOLACE</strong> is a mobile application designed to assist
+              patients in palliative and hospice care by monitoring their
+              symptoms and vital signs and providing predictions in 1, 6, and
+              12-hour intervals to help healthcare providers in their
+              decision-making for immediate intervention. <br /><br />The app
+              aims to improve the quality of care and enhance the overall
+              well-being of patients during their end-of-life journey.
+            </p>
+          </div>
+          <div class="project-made">
+            <h2>Made with</h2>
+            <div class="project-stack">
+              <div class="flutter">
+                <img src="assets/stack/flutter.png" alt="" />
+              </div>
+              <div class="dart">
+                <img src="assets/stack/dart.png" alt="" />
+              </div>
+              <div class="kotlin">
+                <img src="assets/stack/kotlin.png" alt="" />
+              </div>
+              <div class="android">
+                <img src="assets/stack/android.png" alt="" />
+              </div>
+              <div class="firebase">
+                <img src="assets/stack/firebase.png" alt="" />
+              </div>
+              <div class="fastapi">
+                <img src="assets/stack/fastapi.png" alt="" />
+              </div>
+              <div class="python">
+                <img src="assets/stack/python.png" alt="" />
+              </div>
+              <div class="pytorch">
+                <img src="assets/stack/pytorch.png" alt="" />
+              </div>
+              <div class="tensorflow">
+                <img src="assets/stack/tensorflow.png" alt="" />
+              </div>
+              <div class="cloud">
+                <img src="assets/stack/cloud.png" alt="" />
+              </div>
+              <div class="gplay">
+                <img src="assets/stack/gplay.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="project-test">
+            <a href="">
+              <div class="view"><p>View Project</p></div>
+            </a>
+            <a href="https://github.com/Reganexus/SOLACE">
+              <div class="github"><p>View Github</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div onclick="expandProject('spacebot')">
+        <div class="project-item">
+          <img src="assets/project/spacebot.png" alt="" />
+          <div class="project-name">
+            <h2>SpaceBot</h2>
+            <p>Space-themed AI Chatbot using Gemini AI Model</p>
+          </div>
+          <div class="project-date">
+            <p>December 2024</p>
+          </div>
+        </div>
+        <div class="project-details collapse" id="spacebot">
+          <div class="project-context">
+            <p>
+              <strong>SpaceBot</strong> is an AI-powered chatbot designed to
+              provide users with information about space, planets, and the
+              universe. It utlizes the Gemini AI Model to deliver accurate and
+              engaging responses to cater to the needs of space enthusiasts and
+              learners.
+            </p>
+          </div>
+          <div class="project-made">
+            <h2>Made with</h2>
+            <div class="project-stack">
+              <div class="gemini">
+                <img src="assets/stack/gemini.webp" alt="" />
+              </div>
+              <div class="html"><img src="assets/stack/html.png" alt="" /></div>
+              <div class="css"><img src="assets/stack/css.png" alt="" /></div>
+              <div class="javascript">
+                <img src="assets/stack/js.png" alt="" />
+              </div>
+              <div class="bootstrap">
+                <img src="assets/stack/bootstrap.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="project-test">
+            <a href="https://vercel.com/renzo-vinas-projects/space-bot">
+              <div class="view"><p>View Project</p></div>
+            </a>
+            <a href="https://github.com/Reganexus/SpaceBot">
+              <div class="github"><p>View Github</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div onclick="expandProject('airis')">
+        <div class="project-item">
+          <img src="assets/project/airis.png" alt="" />
+          <div class="project-name">
+            <h2>Airis</h2>
+            <p>Dynamic AI Chatbot for business using GPT AI Model</p>
+          </div>
+          <div class="project-date">
+            <p>August 2024</p>
+          </div>
+        </div>
+        <div class="project-details collapse" id="airis">
+          <div class="project-context">
+            <p>
+              <strong>Airis</strong> is a dynamic AI chatbot designed to assist
+              businesses in providing customer support and information. It
+              utilizes the GPT AI to provide insights and answers to user
+              queries, enhancing customer engagement and satisfaction.
+              <br /><br />The chatbot can be integrated into various platforms,
+              making it a versatile tool for businesses looking to improve their
+              customer service and overall user experience.
+            </p>
+          </div>
+          <div class="project-made">
+            <h2>Made with</h2>
+            <div class="project-stack">
+              <div class="gpt">
+                <img src="assets/stack/gpt.png" alt="" />
+              </div>
+              <div class="react">
+                <img src="assets/stack/react.png" alt="" />
+              </div>
+              <div class="typescript">
+                <img src="assets/stack/typescript.png" alt="" />
+              </div>
+              <div class="tailwind">
+                <img src="assets/stack/tailwind.png" alt="" />
+              </div>
+              <div class="nextjs">
+                <img src="assets/stack/nextjs.png" alt="" />
+              </div>
+              <div class="vercel">
+                <img src="assets/stack/vercel.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="project-test">
+            <a href="">
+              <div class="view"><p>View Project</p></div>
+            </a>
+            <a href="https://github.com/Reganexus/Airis">
+              <div class="github"><p>View Github</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div onclick="expandProject('mapaturo')">
+        <div class="project-item">
+          <img src="assets/project/mapaturo.png" alt="" />
+          <div class="project-name">
+            <h2>MapaTuro</h2>
+            <p>An Interactive Gamified Map of the Philippines</p>
+          </div>
+          <div class="project-date">
+            <p>May 2024</p>
+          </div>
+        </div>
+        <div class="project-details collapse" id="mapaturo">
+          <div class="project-context">
+            <p>
+              MapaTuro is an interactive gamified map of the Philippines that
+              allows users to explore the country's rich culture, history, and
+              attractions through an engaging and educational experience.
+              Through a variety of game modes and difficulty levels, users can
+              learn about different regions, landmarks, and cultural heritage
+              sites in the Philippines.
+            </p>
+          </div>
+          <div class="project-made">
+            <h2>Made with</h2>
+            <div class="project-stack">
+              <div class="html"><img src="assets/stack/html.png" alt="" /></div>
+              <div class="css"><img src="assets/stack/css.png" alt="" /></div>
+              <div class="javascript">
+                <img src="assets/stack/js.png" alt="" />
+              </div>
+              <div class="bootstrap">
+                <img src="assets/stack/bootstrap.png" alt="" />
+              </div>
+              <div class="php">
+                <img src="assets/stack/php.png" alt="" />
+              </div>
+              <div class="mysql">
+                <img src="assets/stack/mysql.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="project-test">
+            <a href="">
+              <div class="view"><p>View Project</p></div>
+            </a>
+            <a href="https://github.com/Reganexus/MapaturoRevamp">
+              <div class="github"><p>View Github</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>&copy; Renzo Viñas, 2025</footer>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.20.0/matter.min.js"
+      integrity="sha512-6+7rTBmR6pRFe9fa0vCFjFaHZj/XYa7774bEBzRtxgdpIJOS++R3cKd6Prg/eJmxtsJotd8KAg4g57uuVQsZKA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script/matter.js"></script>
+  </body>
+</html>
